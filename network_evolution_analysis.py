@@ -59,3 +59,15 @@ plt.savefig("images/network_evolution_plot.png")
 
 # Show the plot
 plt.show()
+
+# Visualize the graph for Phase 3
+plt.figure(figsize=(10, 6))
+nx.draw(G[3], pos=nx.drawing.nx_agraph.graphviz_layout(G[3]), with_labels=True)
+plt.title("Phase 3 Network Visualization")
+plt.grid(True)
+
+# Save the visualization as an image in the "images" folder
+plt.savefig("images/phase3_network_visualization.png")
+
+# Show the plot
+plt.show()
